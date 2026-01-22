@@ -28,11 +28,11 @@
     "secrets": [
       {
         "name": "DB_USERNAME",
-        "valueFrom": "arn:aws:secretsmanager:us-east-1:879400024568:secret:itgenius-db-secret-openti:username::"
+        "valueFrom": "arn:aws:secretsmanager:us-east-1:879400024568:secret:itgenius-db-secret-openti-dbaleD:username::"
       },
       {
         "name": "DB_PASSWORD",
-        "valueFrom": "arn:aws:secretsmanager:us-east-1:879400024568:secret:itgenius-db-secret-openti:password::"
+        "valueFrom": "arn:aws:secretsmanager:us-east-1:879400024568:secret:itgenius-db-secret-openti-dbaleD:password::"
       }
     ],
     "environment": [
