@@ -11,3 +11,7 @@ output "security_group_id" {
 output "ecr_repository_url" {
   value = aws_ecr_repository.main.repository_url
 }
+
+output "ansible_server" {
+  value = aws_instance.ansible_server.public_ip  
+}

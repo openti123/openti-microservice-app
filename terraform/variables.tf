@@ -76,3 +76,42 @@ variable "enable_scan_on_push" {
   default     = true
 }
 
+variable "instance_type" {
+  description = "The Instance type"
+  default     = "t2.micro"
+}
+
+variable "instance_ami" {
+  description = "AMI ID for the instances"
+  default     = "ami-05ffe3c48a9991133"
+}
+
+variable "instance_key_name" {
+  description = "An Existing Keypair to be used for the instances"
+  default     = "new-server"
+}
+
+variable "db_name" {
+  description = "The name of the database"
+  default     = "itgeniusdb"
+}
+
+variable "db_instance_class" {
+  description = "The instance class for the RDS database"
+  type        = string
+  default     = "db.t3.micro"
+}
+
+variable "db_engine_version" {
+  description = "MySQL Engine Version"
+  default     = "8.0"
+}
+
+variable "s3_bucket_name" {
+  description = "The name of the S3 bucket for Terraform state"
+  default     = "openti-s3-bucket-state-file"
+}
+variable "db_secret_name" {
+  description = "Name of the Secrets Manager secret"
+  type        = string
+}

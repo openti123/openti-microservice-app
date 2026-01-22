@@ -4,12 +4,12 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "1024",
   "memory": "2048",
-  "executionRoleArn": "arn:aws:iam::762233764391:role/ecsTaskExecutionRole",
-  "taskRoleArn": "arn:aws:iam::762233764391:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::879400024568:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::879400024568:role/ecsTaskExecutionRole",
   "containerDefinitions": [
   {
     "name": "itgenius-microservice-ecs-app-dev",
-    "image": "762233764391.dkr.ecr.us-east-1.amazonaws.com/itgenius-microservice-ecs-app-dev-repo:V001",
+    "image": "879400024568.dkr.ecr.us-east-1.amazonaws.com/itgenius-microservice-ecs-app-dev-repo:V001",
     "essential": true,
     "portMappings": [
       {
@@ -28,17 +28,17 @@
     "secrets": [
       {
         "name": "DB_USERNAME",
-        "valueFrom": "arn:aws:secretsmanager:us-east-1:762233764391:secret:itgenius-db-secret-u61YQB:username::"
+        "valueFrom": "arn:aws:secretsmanager:us-east-1:879400024568:secret:itgenius-db-secret-openti:username::"
       },
       {
         "name": "DB_PASSWORD",
-        "valueFrom": "arn:aws:secretsmanager:us-east-1:762233764391:secret:itgenius-db-secret-u61YQB:password::"
+        "valueFrom": "arn:aws:secretsmanager:us-east-1:879400024568:secret:itgenius-db-secret-openti:password::"
       }
     ],
     "environment": [
       {
         "name": "DB_URL",
-        "value": "jdbc:mysql://itgeniusdb.cepa48wa8kv8.us-east-1.rds.amazonaws.com:3306/itgeniusdb"
+        "value": "jdbc:mysql://itgeniusdb.cepa48wa8kv8.us-east-1.rds.amazonaws.com:3306/opentidb"
       }
     ]
   }

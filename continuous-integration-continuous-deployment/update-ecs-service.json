@@ -5,10 +5,9 @@
   "desiredCount": 2,
   "networkConfiguration": {
     "awsvpcConfiguration": {
-      "subnets": [
-        "subnet-09e6e1eb0955bd8c4",
-        "subnet-0169798bbb090c914"
-      ],
+      "subnets":[
+  "subnet-06cf741bcc6df9cf3",
+  "subnet-0b6dc6b8b92580f6a"],
       "securityGroups": [
         "sg-0a93498d091b858c8"
       ],

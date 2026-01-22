@@ -2,16 +2,15 @@
 {
   "cluster": "itgenius-microservice-ecs-app-dev-cluster",
   "serviceName": "itgenius-microservice-ecs-app-dev-service",
-  "taskDefinition": "arn:aws:ecs:us-east-1:762233764391:task-definition/itgenius-microservice-ecs-app-dev:01",
+  "taskDefinition": "arn:aws:ecs:us-east-1:879400024568:task-definition/itgenius-microservice-ecs-app-dev:01",
   "desiredCount": 2,
   "launchType": "FARGATE",
   "platformVersion": "LATEST",
   "networkConfiguration": {
     "awsvpcConfiguration": {
       "subnets": [
-        "subnet-09e6e1eb0955bd8c4",
-        "subnet-0169798bbb090c914"
-      ],
+  "subnet-06cf741bcc6df9cf3",
+  "subnet-0b6dc6b8b92580f6a"],
       "securityGroups": [
         "sg-0a93498d091b858c8"
       ],
@@ -20,7 +19,7 @@
   },
   "loadBalancers": [
     {
-      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:762233764391:targetgroup/itgenius-app-ecs-dev-tg/c90d3526d5fc8442",
+      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:879400024568:targetgroup/itgenius-app-ecs-dev-tg/c90d3526d5fc8442",
       "containerName": "itgenius-microservice-ecs-app-dev",
       "containerPort": 8085
     }
