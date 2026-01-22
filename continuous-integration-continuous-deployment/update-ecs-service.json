@@ -1,0 +1,22 @@
+{
+  "cluster": "itgenius-microservice-ecs-app-dev-cluster",
+  "service": "itgenius-microservice-ecs-app-dev-service",
+  "taskDefinition": "arn:aws:ecs:us-east-1:762233764391:task-definition/itgenius-microservice-ecs-app-dev:01",
+  "desiredCount": 2,
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": [
+        "subnet-09e6e1eb0955bd8c4",
+        "subnet-0169798bbb090c914"
+      ],
+      "securityGroups": [
+        "sg-0a93498d091b858c8"
+      ],
+      "assignPublicIp": "ENABLED"
+    }
+  },
+  "deploymentConfiguration": {
+    "minimumHealthyPercent": 50,
+    "maximumPercent": 200
+  }
+}

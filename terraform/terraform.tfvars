@@ -1,0 +1,13 @@
+aws_region         = "us-east-1"
+vpc_id             = "vpc-0eeb9af51dcf5660a"
+subnet_ids         = ["subnet-09e6e1eb0955bd8c4", "subnet-0169798bbb090c914"]
+cluster_name       = "itgenius-microservice-ecs-app-dev-cluster"
+service_name       = "itgenius-microservice-ecs-app-dev-service"
+application_lb_name = "itgenius-app-ecs-dev-alb"
+target_group_name  = "itgenius-app-ecs-dev-tg"
+container_port     = 8085
+desired_count      = 3
+project            = "itgenius-microservice-ecs-app"
+environment        = "dev"
+ecr_mutability     = "MUTABLE"
+enable_scan_on_push = true
