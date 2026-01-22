@@ -19,7 +19,7 @@
   },
   "loadBalancers": [
     {
-      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:879400024568:targetgroup/itgenius-app-ecs-dev-tg/c90d3526d5fc8442",
+      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:879400024568:targetgroup/itgenius-app-ecs-dev-tg/1de5aff9a173baa6",
       "containerName": "itgenius-microservice-ecs-app-dev",
       "containerPort": 8085
     }
