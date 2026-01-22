@@ -38,7 +38,7 @@
     "environment": [
       {
         "name": "DB_URL",
-        "value": "jdbc:mysql://itgeniusdb.cepa48wa8kv8.us-east-1.rds.amazonaws.com:3306/opentidb"
+        "value": "jdbc:mysql://opentidb.ced82aosehqi.us-east-1.rds.amazonaws.com:3306/opentidb"
       }
     ]
   }
